@@ -24,14 +24,14 @@
 
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet"><!-- 구글폰트 -->
 
-<title>G-DAY</title><!-- 브라우져바 타이틀 문구 -->
+<title>채하 돌잔치</title><!-- 브라우져바 타이틀 문구 -->
 
 </head>
 <body style=''>
 <div id='wrap'>
 	<article id='head'>
 		<aside class='head'><!-- 행사날짜 디데이 -->
-			<span>D-34</span>노채하의 첫 생일을 축하해 주세요!
+			<span id="dDay"></span>노채하의 첫 생일을 축하해 주세요!
 		</aside>
 		<div class='top'>
 			<img id="imgbaby" name="imgbaby" src="./mobile/baby/A/images/top_title.jpg" width='90%' alt="" />
@@ -70,11 +70,11 @@
 			<h2>인사말</h2>
 						작년 봄 저희 품에 축복처럼 찾아와<br />
 매일매일 새로운 행복과 웃음을 안겨주는<br />
-미소천사 서아가 어느덧 첫 생일을 맞이하게 되었습니다.<br />
+미소천사 채하가 어느덧 첫 생일을 맞이하게 되었습니다.<br />
 <br />
 특별한 날 소중한 분들과 함께 기쁨을 나누고자 <br />
 조심스럽게 조촐한 자리를 마련하였으니<br />
-부디 참석하셔서 서아의 첫 생일을 축하해주세요.					</div>
+부디 참석하셔서 채하의 첫 생일을 축하해주세요.					</div>
 	</article>
 
 	<article id='gallery'>
@@ -85,9 +85,11 @@
 		<a href="./mobile/baby/A/gallery.php?idx=1141048&trade_code=QMIRJ1709260005" target='_blank'>
 			<img src="./mobile/baby/A/images/btn_photo.jpg" width='100%' alt="" />
 		</a>
+		<!--
 		<a href="./mobile/baby/A/message.php?idx=1141048&trade_code=QMIRJ1709260005" target='_blank'>
 			<img src="./mobile/baby/A/images/btn_comment.jpg" width='100%' alt="" />
 		</a>
+		-->
 	</article>
 
 	<article class='info'><!-- 하단 날짜/장소 -->
@@ -108,6 +110,7 @@
 			<aside>지도를 클릭하면 자세히 보실 수 있습니다.</aside>	
 			<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:600px; height:333px; color:#333; position:relative">
 						<div id="staticMap" style="height: 300px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1493.7149627307597!2d126.7503540950401!3d37.50622990317413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7d1210340729%3A0xc99e71b71fb91447!2z65Oc66eI66as7IqkIOu2gOyynOyDgeuPmeygkA!5e0!3m2!1sko!2skr!4v1681017426320!5m2!1sko!2skr" width="100%" height="333" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 		
 			</div>
@@ -165,7 +168,7 @@
 				<!-- <a href="#" onclick="javascript:sendKakaoTalk('g-day.co.kr/kr/PRDT_DATA/ORDER./mobile/c3331/QMIRJ1709260005.jpg','g-day.co.kr./mobile/baby/A/index.php?idx=1141048','노채하의 첫 돌잔치에 초대합니다.\n일시:2024년 04월 13일  \n드마리스(부천점)\n아빠:노민준 엄마:김현진');">
 			<img src="./mobile/baby/A/images/btn_kakao.jpg" width='100%' alt="" />
 		</a> -->
-		<a href="/kr./mobile/popup/2g_img.php?idx=1141048&trade_code=QMIRJ1709260005">
+		<a href="./mobile/baby/A/images/IMG_invitation.jpg">
 			<img src="./mobile/baby/A/images/btn_2g.jpg" width='100%' alt="" />
 		</a>
 
@@ -196,6 +199,25 @@
   //]]>
 </script>
 -->
-
+<script>
+$(document).ready(function() {
+	//파일 목록 초기화
+	var dDay = "D";
+	var masTime = new Date("2024-04-13");
+    var todayTime = new Date();
+	var diff = masTime - todayTime;
+	var diffDay = Math.floor(diff / (1000*60*60*24));
+	diffDay += 1;
+	if(diffDay == 0){
+		dDay += "-"+diffDay
+	}else if(diffDay > 0){
+		dDay += "-"+diffDay
+	}else{
+		diffDay = diffDay * -1;
+		dDay += "+"+diffDay;
+	}
+	$("#dDay").html(dDay);
+});
+</script>
 </body>
 </html>
