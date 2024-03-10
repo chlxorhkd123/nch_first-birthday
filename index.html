@@ -22,7 +22,7 @@
 <style>
 .title_txt {font-size: 20px; color: #63635c; margin-bottom: 10px;}
 .hidden {display: none;}
-#head .middle{margin-top:30px;margin-bottom:30px;}
+#head .middle{margin-top:60px;margin-bottom:30px;}
 #gallery {
 	display: flex;
 	justify-content: space-between;
@@ -68,7 +68,7 @@
 			<div class='main-img'>
 			<!-- 
 				<p class='cover'><img src="./mobile/baby/A/images/img-cover.png" alt="" /></p>-->
-							<img src="./mobile/baby/A/images/nch_invitation.jpg" width='100%' alt="" /><!-- 대표 아기이미지 -->
+							<img src="./mobile/baby/A/images/nch_invitation.jpg" style="margin-bottom:20px; width:100%"alt="" /><!-- 대표 아기이미지 -->
 						</div>
 		</div>
 		<!-- 
@@ -93,7 +93,7 @@
 -->
 
 		<div id='gallery'>
-			<a id="firstImg" class="gallery-item" href="./mobile/baby/A/images/nch/img1.jpg" data-fancybox="gallery" data-caption="캡션">
+			<a id="firstImg" class="gallery-item" href="./mobile/baby/A/images/nch/img1.jpg" data-fancybox="gallery">
 				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img1.jpg">
 			</a>
 
@@ -105,7 +105,7 @@
 				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img3.jpg">
 			</a>
 
-			<a class="gallery-item" href="./mobile/baby/A/images/nch/img4.jpg" data-fancybox="gallery" data-caption="캡션">
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img4.jpg" data-fancybox="gallery">
 				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img4.jpg">
 			</a>
 			<a class="gallery-item" href="./mobile/baby/A/images/nch/img5.jpg" data-fancybox="gallery">
@@ -125,7 +125,6 @@
 
 
 			<img id="moreBtn" class="gallery-item" src="./mobile/baby/A/images/nch/img0.jpg" alt="사진 더보기">
-			
 
 
 			<a class="hidden" href="./mobile/baby/A/images/nch/img9.jpg" data-fancybox="gallery">
@@ -240,6 +239,10 @@
 -->
 
 	<article id='middle'><!-- 기존 홈페이지 지도 스크립트는 map.php 에 혹시 몰라 참고용으로 넣어뒀음 // 업체등록된 주소가 다음지도로 나오면 될 것 같은 느낌? -->
+		
+	<pre style="font-size:16px;padding-bottom:15px;"><!-- 업체등록시 상세주소 밑에 하단 내용 입력할 수 있게 넣어주기, textarea 혹은 편의대로 넣어주세요 -->
+		찾아오시는길
+	</pre>
 		<div class='map-wrap'>
 			<aside>지도를 클릭하면 자세히 보실 수 있습니다.</aside>	
 			<div style="font:normal normal 400 12px/normal dotum, sans-serif; width:600px; height:333px; color:#333; position:relative">
@@ -294,7 +297,6 @@
 
 		
 <pre><!-- 업체등록시 상세주소 밑에 하단 내용 입력할 수 있게 넣어주기, textarea 혹은 편의대로 넣어주세요 -->
-	찾아오시는길<br />
 	※대중교통이용시<br />
 	지하철 <br />
 	7호선 상동역 하차 , 5번출구로 나오신후 <br>도보로 3분거리 드마리스 행사장으로 오시면됩니다<br />
