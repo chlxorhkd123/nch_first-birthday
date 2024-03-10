@@ -71,6 +71,11 @@
 */
 
 
+@font-face {
+    font-family: 'Maruburi';
+    src: local('MaruBuri'),
+    url('font/TTF/MaruBuri-Bold.ttf') format('truetype');
+}
 
 /*
  * Nanum Gothic (Korean) https://www.google.com/fonts/earlyaccess
