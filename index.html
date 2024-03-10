@@ -17,9 +17,35 @@
 <link rel="stylesheet" href="./mobile/baby/A/css/reset.css">
 <link rel="stylesheet" href="./mobile/baby/A/css/layout.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<style>
+.title_txt {font-size: 20px; color: #63635c; margin-bottom: 10px;}
+.hidden {display: none;}
+#head .middle{margin-top:30px;}
+#gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap; // 복수의 행
+	padding:10px;
+}
+.gallery-item {
+	width: 33%;
+	margin-bottom: 2px;
+}
+.gallery-item-img{
+	width:100%;
+}
+
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="./mobile/baby/A/js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
 <script src="./mobile/baby/A/js/vendor/jquery.easing.1.3.js"></script>
+
+
+<script src="./mobile/baby/A/js/fancybox.umd.js"></script>
+<link rel="stylesheet" href="./mobile/baby/A/css/fancybox.css"/>
 
 <script src="./mobile/baby/A/js/gallery.js"></script>
 <script src="./mobile/baby/A/js/gallery-plugin.js"></script>
@@ -31,44 +57,167 @@
 </head>
 <body style=''>
 <div id='wrap'>
-	<article id='head'>
-		<aside class='head'><!-- 행사날짜 디데이 -->
+	<article id='head'><!-- 
+		<aside class='head'><!-- 행사날짜 디데이
 			<span id="dDay"></span>노채하의 첫 생일을 축하해 주세요!
-		</aside>
-		<div class='top'>
+		</aside> -->
+		<div class='top'><!-- 
 			<img id="imgbaby" name="imgbaby" src="./mobile/baby/A/images/top_title.jpg" width='90%' alt="" />
-			<!-- <img id="imgbaby" name="imgbaby" src="./mobile/baby/A/images/top_title.jpg" width='90%' alt="" /> -->
-			<h1><strong>노채하</strong>의 <span>첫 돌</span>잔치에<br/>초대합니다.</h1><!-- 아기이름 -->
+			<img id="imgbaby" name="imgbaby" src="./mobile/baby/A/images/top_title.jpg" width='90%' alt="" /> 
+			<h1><strong>노채하</strong>의 <span>첫 돌</span>잔치에<br/>초대합니다.</h1>-->
 			<div class='main-img'>
-				<p class='cover'><img src="./mobile/baby/A/images/img-cover.png" alt="" /></p>
-							<img src="./mobile/baby/A/images/IMG_6457.jpg" width='100%' alt="" /><!-- 대표 아기이미지 -->
+			<!-- 
+				<p class='cover'><img src="./mobile/baby/A/images/img-cover.png" alt="" /></p>-->
+							<img src="./mobile/baby/A/images/nch_invitation.jpg" width='100%' alt="" /><!-- 대표 아기이미지 -->
 						</div>
 		</div>
-
-		<div class='info'><!-- 상단 날짜/장소 -->
+		<!-- 
+		<div class='info'>
+		
+			<p class='title_txt'>채하와 함께한 1년,</p>
+			<p class='title_txt'>그 기쁨을 함께 나누고 싶습니다.</p>
+			<p class='title_txt'>
+				<span class='parents'>아빠</span><span class='parents_name'>노민준</span>
+				<span class="line"></span>
+				<span class='parents'>엄마</span><span class='parents_name'>김현진</span>
+			</p>
+			
+			<hr/>
+			
 			<p class='date'>2024.<span>04.13</span> (토) 오후 <span>3:00</span></p>
 			<p class='tit'>드마리스(부천점)&nbsp;<span><font size="3">베네홀</font></span></p>
 			<p class='address'>경기 부천시 원미구 길주로 71</br>드마리스</p>
+
 			<p class='tel'>Tel.0507-1391-0089</p>
 		</div>
+-->
 
+		<div id='gallery'>
+			<a id="firstImg" class="gallery-item" href="./mobile/baby/A/images/nch/img1.jpg" data-fancybox="gallery" data-caption="캡션">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img1.jpg">
+			</a>
+
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img2.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img2.jpg">
+			</a>
+
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img3.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img3.jpg">
+			</a>
+
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img4.jpg" data-fancybox="gallery" data-caption="캡션">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img4.jpg">
+			</a>
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img5.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img5.jpg">
+			</a>
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img6.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img6.jpg">
+			</a>
+			
+			
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img7.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img7.jpg">
+			</a>
+			<a class="gallery-item" href="./mobile/baby/A/images/nch/img8.jpg" data-fancybox="gallery">
+				<img class="gallery-item-img" src="./mobile/baby/A/images/nch/img8.jpg">
+			</a>
+
+
+			<img id="moreBtn" class="gallery-item" src="./mobile/baby/A/images/nch/img0.jpg" alt="사진 더보기">
+			
+
+
+			<a class="hidden" href="./mobile/baby/A/images/nch/img9.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img9.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img10.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img10.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img11.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img11.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img12.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img12.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img13.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img13.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img14.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img14.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img15.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img15.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img16.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img16.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img17.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img17.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img18.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img18.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img19.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img19.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img20.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img20.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img21.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img21.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img22.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img22.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img23.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img23.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img24.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img24.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img25.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img25.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img26.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img26.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img27.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img27.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img28.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img28.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img29.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img29.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img30.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img30.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img31.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img32.jpg">
+			</a>
+			<a class="hidden" href="./mobile/baby/A/images/nch/img32.jpg" data-fancybox="gallery">
+				<img src="./mobile/baby/A/images/nch/img32.jpg">
+			</a>
+		</div>
 		<div class='middle'>
                             <ul>
                     <li class='fl'><!-- 아빠 / 문자 전화 -->
-                        <p><span>아빠</span>노민준</p>
+                        <p><span>아빠</span>연락처</p>
                         <a href="sms:010-4116-8567" class='fr'><img src="./mobile/baby/A/images/sms_father.jpg" alt="" /></a>
                         <a href="tel:010-4116-8567" class='fl'><img src="./mobile/baby/A/images/tel_father.jpg" alt="" /></a>
                     </li>
                     <div class="line"></div>
                     <li class='fr'><!-- 엄마 / 문자 전화 -->
-                        <p><span>엄마</span>김현진</p>
+                        <p><span>엄마</span>연락처</p>
                         <a href="sms:010-9961-1459" class='fr'><img src="./mobile/baby/A/images/sms_mom.jpg" alt="" /></a>
                         <a href="tel:010-9961-1459" class='fl'><img src="./mobile/baby/A/images/tel_mom.jpg" alt="" /></a>
                     </li>
                 </ul>
 		</div>
-
-		<div class='bottom'><!-- 인사말 -->
+<!-- 인사말
+		<div class='bottom'>
 			<h2>인사말</h2>
 						작년 봄 저희 품에 축복처럼 찾아와<br />
 매일매일 새로운 행복과 웃음을 안겨주는<br />
@@ -77,35 +226,18 @@
 특별한 날 소중한 분들과 함께 기쁨을 나누고자 <br />
 조심스럽게 조촐한 자리를 마련하였으니<br />
 부디 참석하셔서 채하의 첫 생일을 축하해주세요.					</div>
+ -->
 	</article>
 
-	<article id='gallery'>
-		<div class='book'>
-			<img src="./mobile/baby/A/images/photo-frame.jpg" class='cover' alt="" />
-			<img src="./mobile/baby/A/images/IMG_6457.jpg" class='photo'  alt="" /><!-- 대표 아기이미지 -->
-		</div>
-		<a href="./mobile/baby/A/gallery.php?idx=1141048&trade_code=QMIRJ1709260005" target='_blank'>
-			<img src="./mobile/baby/A/images/btn_photo.jpg" width='100%' alt="" />
-		</a>
-		<!--
-		<a href="./mobile/baby/A/message.php?idx=1141048&trade_code=QMIRJ1709260005" target='_blank'>
-			<img src="./mobile/baby/A/images/btn_comment.jpg" width='100%' alt="" />
-		</a>
-		-->
-	</article>
-
-	<article class='info'><!-- 하단 날짜/장소 -->
+<!-- 하단 날짜/장소 
+	<article class='info'>
 		<p class='line'></p>
-<!--		<p class='date'>--><!--.<span>--><!--.--><!--</span> (--><!--) --><!-- <span>--><!--:--><!--</span></p>-->
-<!--		<p class='tit'>--><!----><!--&nbsp;<span><font size="3">--><!--</font></span>--><!--</p>-->
-<!--		<p class='address'>--><!--</br>--><!--</p>-->
-<!--		<a href='tel:--><!--'>행사장 전화연결</a>-->
         <p class='date'>2024.<span>04.13</span> (토) 오후 <span>3:00</span></p>
         <p class='tit'>드마리스(부천점)&nbsp;<span><font size="3">베네홀</font></span></p>
         <p class='address'>경기 부천시 원미구 길주로 71</br>드마리스</p>
         <a href='tel:0507-1391-0089'>행사장 전화연결</a>
 	</article>
-
+-->
 
 	<article id='middle'><!-- 기존 홈페이지 지도 스크립트는 map.php 에 혹시 몰라 참고용으로 넣어뒀음 // 업체등록된 주소가 다음지도로 나오면 될 것 같은 느낌? -->
 		<div class='map-wrap'>
@@ -172,11 +304,11 @@
 
 				<!-- <a href="#" onclick="javascript:sendKakaoTalk('g-day.co.kr/kr/PRDT_DATA/ORDER./mobile/c3331/QMIRJ1709260005.jpg','g-day.co.kr./mobile/baby/A/index.php?idx=1141048','노채하의 첫 돌잔치에 초대합니다.\n일시:2024년 04월 13일  \n드마리스(부천점)\n아빠:노민준 엄마:김현진');">
 			<img src="./mobile/baby/A/images/btn_kakao.jpg" width='100%' alt="" />
-		</a> -->
+		</a>
 		<a href="./mobile/baby/A/images/IMG_invitation.jpg">
 			<img src="./mobile/baby/A/images/btn_2g.jpg" width='100%' alt="" />
 		</a>
-
+ -->
 	</article>
 	<!-- <footer><img src="./mobile/baby/A/images/footer_logo.jpg" width='100%' alt="" /></footer> -->
 </div>
@@ -214,6 +346,13 @@ $(document).ready(function() {
 		dDay += "+"+diffDay;
 	}
 	$("#dDay").html(dDay);
+
+
+	Fancybox.bind("[data-fancybox]",{});
+
+	$("#moreBtn").click(function(){
+		$("#firstImg")[0].click();
+	});
 });
 </script>
 </body>
